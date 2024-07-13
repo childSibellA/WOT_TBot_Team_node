@@ -2,7 +2,7 @@ const axiosCustomers = require("../../axios/customer.axios");
 const axiosTeam = require("../../axios/team.axios");
 
 function sendMessage(messageObj, messageText) {
-  return axiosCustomers.post("sendMessage", {
+  return axiosTeam.post("sendMessage", {
     chat_id: messageObj.chat.id,
     text: messageText,
   });
