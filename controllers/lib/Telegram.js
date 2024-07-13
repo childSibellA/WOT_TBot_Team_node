@@ -63,10 +63,7 @@ function handleMessage(messageObj) {
     }
   } else {
     // Handle non-command messages (optional)
-    return sendMessage(
-      messageObj,
-      "Tell me more about your dream trip! 🌎  I'm here to help you plan it."
-    );
+    return sendMessage(messageObj, messageText);
   }
 }
 
