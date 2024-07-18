@@ -11,10 +11,9 @@ async function handler(req) {
 }
 
 async function sendToOperator(req) {
-  const { chatId, customerName, phone, note } = req.body;
+  const { chatId, message } = req.body;
   if (req.body) {
     console.log(req.body);
-    let message = `name: ${customerName}, phone number: ${phone}, note: ${note}`;
     sendMessageToOperator(chatId, message);
   }
   return;
